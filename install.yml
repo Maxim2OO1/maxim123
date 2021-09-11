@@ -4,4 +4,8 @@
   gather_facts: yes
   tasks:
   - name: Git checkout
-    ping: 
+    ping:
+  - name: Install nginx httpd (state=present is optional)
+    apt:
+      name: nginx
+      state: present
