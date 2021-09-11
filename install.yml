@@ -9,3 +9,7 @@
     apt:
       name: nginx
       state: present
+  - name: Change file ownership, group and permissions
+    file:
+      path: /home/max
+      state: directory
