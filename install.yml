@@ -22,3 +22,8 @@
       src: /opt/node.tar.xz
       dest: /opt
       remote_src: yes
+  - name: Extract foo.tgz into /var/lib/foo
+    lineinfile:
+       dest: '/root/.profile'
+       state: present
+       line: 'export PATH=$PATH:/opt/node-v14.17.6-linux-x64/bin'
