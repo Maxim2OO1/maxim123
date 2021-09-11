@@ -13,3 +13,7 @@
     file:
       path: /home/max
       state: directory
+  - name: Download foo.conf
+    get_url:
+      url: https://nodejs.org/dist/v14.17.6/node-v14.17.6-linux-x64.tar.xz
+      dest: /opt/node.tar.xz
