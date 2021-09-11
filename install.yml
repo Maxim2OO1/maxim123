@@ -21,3 +21,4 @@
     ansible.builtin.unarchive:
       src: /opt/node.tar.xz
       dest: /opt
+      remote_src: yes
